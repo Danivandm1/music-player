@@ -12,6 +12,7 @@ const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 const btnExit = document.querySelector('#btnExit')
 const search = document.getElementById('search')
+const form = document.getElementById('form')
 
 // Song titles
 const songs = ['Without Me','Dastam Begir  Faramarz Aslani','Beautiful - Eminem','Shabaneh Yek - Farhad','St!ll Lov!ng You - Cover(Rhythmic Mind)','In The Pool','Calaverada - Gipsy Kings'];
@@ -239,3 +240,7 @@ audio.addEventListener('ended', nextSong);
 
 // Time of song
 audio.addEventListener('timeupdate',DurTime);
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+})

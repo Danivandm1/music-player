@@ -9,11 +9,12 @@
     <title>Music Player</title>
   </head>
   <body style="background-color: #000000; overflow-x: hidden; overflow-y: hidden;">
-    <form>
+    <form id="form">
 
     <div class="search" style="position: absolute;">  
-      <i class="search-icon fas fa-search"></i>  
-      <input class="search-input" type="text" placeholder="Search any song">
+      <i  class="search-icon fas fa-search"></i>  
+      <input class="search-input" type="text" placeholder="Search song">
+      <button class="search-btn">Search</button>
     </div>
 
     </form>
@@ -38,7 +39,7 @@
         <div class="progress-container" id="progress-container">
           <div class="progress" id="progress"></div>
         </div>
-          <div style="font-size: 14px;color: #355fdf;">
+          <div style="font-size: 13px;color: #355fdf;">
           <span id="currTime">--:--</span>
           <span style="margin-left: 60%;" id="durTime">--:--</span>
         </div>
