@@ -8,12 +8,28 @@
     <link rel="stylesheet" href="style.css">
     <title>Music Player</title>
   </head>
-  <body>
-    <div class="div1">
-    <input type="text"class="Inputsearch" id="search">
-    <button type="button" class="btnSearch">kgg;cuqg</button>
+  <body style="background-color: #000000; overflow-x: hidden; overflow-y: hidden;">
+    <form>
+
+    <div class="search" style="position: absolute;">  
+      <i class="search-icon fas fa-search"></i>  
+      <input class="search-input" type="text" placeholder="Search any song">
     </div>
-    <h1>Music Player</h1>
+
+    </form>
+  <div class="back">
+
+  </div>
+  <div class="back-shodow">
+
+<!-- 
+    <form style="display: none;" class="div1">
+      <div class="div1" id="div1">
+      <button type="button" id="btnExit" class="btn-small btn-ghost"><i class="fas fa-times"></i></button>
+      </div>
+      <input type="search"class="Inputsearch" id="search" placeholder="search any song">
+      <button id="btnSearch" type="button" class="btnSearch">kgg;cuqg</button>
+    </form> -->
 
     <div class="music-container" id="music-container">
       <div class="music-info">
@@ -22,7 +38,7 @@
         <div class="progress-container" id="progress-container">
           <div class="progress" id="progress"></div>
         </div>
-          <div style="font-size: 14px;color: #b64863">
+          <div style="font-size: 14px;color: #355fdf;">
           <span id="currTime">--:--</span>
           <span style="margin-left: 60%;" id="durTime">--:--</span>
         </div>
@@ -45,11 +61,7 @@
         </button>
       </div>
     </div>
-    <div class="search">
-      <button type="button" id="btnExit" class="btn-small btn-ghost"><i class="fas fa-times"></i></button>
-
-    </div>
-
+  </div>
     <script src="script.js"></script>
   </body>
 </html>

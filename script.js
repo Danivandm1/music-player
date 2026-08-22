@@ -11,7 +11,7 @@ const cover = document.getElementById('cover');
 const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 const btnExit = document.querySelector('#btnExit')
-const searchDiv = document.getElementById('btn-search')
+const search = document.getElementById('search')
 
 // Song titles
 const songs = ['Without Me','Dastam Begir  Faramarz Aslani','Beautiful - Eminem','Shabaneh Yek - Farhad','St!ll Lov!ng You - Cover(Rhythmic Mind)','In The Pool','Calaverada - Gipsy Kings'];
@@ -217,13 +217,16 @@ prevBtn.addEventListener('click', prevSong);
 nextBtn.addEventListener('click', nextSong);
 
 
-// searchDiv.addEventListener('click', function() {
+// search.addEventListener('focus', function() {
 // 	document.querySelector('.search').classList.add('show');
 // });
+// search.addEventListener('mouseout', function(){
+//   document.querySelector('.search').classList.remove('show')
+// });
 
-btnExit.addEventListener('click', function() {
-	document.querySelector('.search').classList.remove('show');
-});
+//  btnExit.addEventListener('click', function() {
+//  	document.querySelector('.search').classList.remove('show');
+//  });
 
 // Time/song update
 audio.addEventListener('timeupdate', updateProgress);
