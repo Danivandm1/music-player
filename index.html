@@ -5,21 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+   <link href="flowbite.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <title>Music Player</title>
   </head>
   <body style="background-color: #000000; overflow-x: hidden; overflow-y: hidden;">
-    <form id="form">
+ 
+  
 
-    <div class="search" style="position: absolute;">  
-      <i  class="search-icon fas fa-search"></i>  
-      <input class="search-input" type="text" placeholder="Search song">
-      <button class="search-btn">Search</button>
-    </div>
-
-    </form>
   <div class="back">
+    <form id="form" class="absolute flex items-center w-full max-w-lg mx-auto space-x-2 top-5">   
+      <label class="sr-only">Search</label>
 
+      <div class="w-full">
+          <div style="color: #ffffff42;" class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+            <svg class="w-4 h-4 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+            </svg>
+          </div>
+          <input style="border-radius: 20px; background:#143862;" type="text" id="voice-search" class="search-input block w-full ps-9 pe-3 py-2.5 text-heading focus:outline-none text-sm rounded-base focus:ring-brand focus:border-brand shadow-xs placeholder:text-body" placeholder="Search song" required />
+          <button type="button" class="absolute inset-y-0 end-0 flex items-center pe-3">
+          </button>
+      </div>
+
+      <button  style="border-radius: 20px;"  type="submit" class="bg-blue-800 items-center  text-white bg-brand hover:bg-blue-600 box-border border border-transparent focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
+        Search
+      </button>
+    </form>
   </div>
   <div class="back-shodow">
 
@@ -39,7 +53,7 @@
         <div class="progress-container" id="progress-container">
           <div class="progress" id="progress"></div>
         </div>
-          <div style="font-size: 13px;color: #355fdf;">
+          <div style="font-size: 13px;BACKcolor: #355fdf;">
           <span id="currTime">--:--</span>
           <span style="margin-left: 60%;" id="durTime">--:--</span>
         </div>
@@ -48,7 +62,7 @@
       <audio src="music/Without Me.mp3" id="audio"></audio>
 
       <div class="img-container">
-        <img src="images/Without Me.jpg" alt="music-cover" id="cover" />
+        <img class="image1" src="images/Without Me.jpg" alt="music-cover" id="cover" />
       </div>
       <div class="navigation">
         <button id="prev" class="action-btn">
@@ -64,5 +78,6 @@
     </div>
   </div>
     <script src="script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
   </body>
 </html>
