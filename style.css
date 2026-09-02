@@ -371,7 +371,7 @@ img{
   max-width: 100%;
   padding: 20px 30px;
   position: absolute;
-  bottom: 20vh;
+  bottom: 15vh;
   margin: 100px 0;
   z-index: 10;
   transform: scale(0.95);
