@@ -156,7 +156,7 @@ img{
 
 .btnSearch{
   position: absolute;
-  top: -99px;
+  top: -100px;
   right: 3px;
   background-color: #e056fd;
   border: none;
@@ -535,14 +535,14 @@ form{
   max-width: 100%;
   padding: 20px 30px;
   position: absolute;
-  bottom: 23vh;
+  bottom: 15vh;
   margin: 100px 0;
   z-index: 10;
-  transform: scale(1);
+  transform: scale(1.15);
  }
 
 form{
-  transform: scale(1);
+  transform: scale(1.2);
 }
 
 
