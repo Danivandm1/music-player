@@ -371,7 +371,7 @@ img{
   max-width: 100%;
   padding: 20px 30px;
   position: absolute;
-  bottom: 15vh;
+  bottom: 12vh;
   margin: 100px 0;
   z-index: 10;
   transform: scale(0.95);
@@ -461,7 +461,7 @@ img{
   bottom: 23vh;
   margin: 100px 0;
   z-index: 10;
-  transform: scale(1.45);
+  transform: scale(1.4);
 }
 
 form{
