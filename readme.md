@@ -9,4 +9,4 @@ Create beautiful UI to play music stored in the "music folder" using the HTML5 a
 - Switch songs
 - Progress bar
 - Add play song randomly in next song functionality
--Back to pervious song in pervious button functionality
+- Back to pervious song in pervious button functionality
